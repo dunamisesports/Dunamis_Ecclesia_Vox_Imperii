@@ -15,36 +15,58 @@
 </head>
 
 <body>
-    <div style="margin-top: 50px;">
-        <h2 class="title goldenrod">Le Dunamis Esports sur Dune : Awakening</h2>
-        <h3 class="title"> <a style="color: rgb(114, 18, 114);" href="https://www.twitch.tv/dunamis_tv" target="_blank"
-                rel="noopener noreferrer"> Dunamis
-                TV</a></h3>
-    </div>
+    <button id="musicToggle" class="music-btn">🔊</button>
 
+    <audio id="bgMusic" autoplay loop>
+        <source src="./sound/dune.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio.
+    </audio>
+    <script>
+        const music = document.getElementById("bgMusic");
+        const button = document.getElementById("musicToggle");
 
+        music.volume = 0.02; // 2%
+
+        button.addEventListener("click", () => {
+            if (music.paused) {
+                music.play();
+                button.textContent = "🔊";
+            } else {
+                music.pause();
+                button.textContent = "🔇";
+            }
+        });
+    </script>
     <div style="margin-top: 50px;">
         <h1 class="title">
-            <a href="#" style="
-        display: inline-block;
-        padding: 14px 28px;
-        background: linear-gradient(145deg, #645629, #1a1c20);
-        color: #e0e0e0;
-        border: 2px solid #6e737b;
-        border-radius: 6px;
-        box-shadow: 0 0 8px rgba(108, 124, 139, 0.5);
-        text-decoration: none;
-        font-family: 'Orbitron', monospace;
-        font-weight: 600;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
-        transition: all 0.3s ease;
-    " onmouseover="this.style.background='linear-gradient(145deg, #6e737b, #3c3f46)'; this.style.color='#ffffff';"
+            <a href="https://dunamis-esports.netlify.app/" style="
+                display: inline-block;
+                padding: 14px 28px;
+                background: linear-gradient(145deg, #645629, #1a1c20);
+                color: #e0e0e0;
+                border: 2px solid #6e737b;
+                border-radius: 6px;
+                box-shadow: 0 0 8px rgba(108, 124, 139, 0.5);
+                text-decoration: none;
+                font-family: 'Orbitron', monospace;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                transition: all 0.3s ease;
+            " onmouseover="this.style.background='linear-gradient(145deg, #6e737b, #3c3f46)'; this.style.color='#ffffff';"
                 onmouseout="this.style.background='linear-gradient(145deg, #3c3f46, #1a1c20)'; this.style.color='#e0e0e0';">
-                Site en Cours de construcition
+                Dunamis Esports
             </a>
         </h1>
     </div>
+    <hr width="40%">
+    <div style="margin-top: 50px;">
+        <h1 class="title goldenrod">Archives du Dunamis sur Dune : Awakening</h1>
+        <h2 class="title goldenrod">Vox Lora</h2>
+    </div>
+
+
+
     <div class="flexerino">
         <div class="flexerino">
             <div class="borderino ancientTest">
@@ -152,11 +174,184 @@
         </div>
 
     </div>
+    <hr width="75%">
 
 
 
+    <div>
+
+        <!-- ====================== -->
+        <!-- GROTTE DE RÉSONANCE -->
+        <!-- ====================== -->
+
+        <div class="borderino">
+            <h2 class="title">🜂 La Grotte de Résonance</h2>
+
+            <div class="flexerino">
+                <div>
+                    <p>
+                        <i>
+                            « Toutes les épices naissent d'Arrakis.
+                            Celle-ci semblait venir d'ailleurs. »
+                        </i>
+                    </p>
+
+                    <p>
+                        Alors que Barar poursuivait les survivants du Schisme,
+                        les trois Gardiens continuèrent leur errance
+                        dans les profondeurs d'Arrakis.
+                    </p>
+
+                    <p>
+                        Ce fut <b>Linaryah</b> qui découvrit une étrange cavité
+                        où poussait une Épice Bleutée.
+                    </p>
+
+                    <p>
+                        Sa lumière ne ressemblait à aucune autre.
+                        Même le sable semblait refuser de la recouvrir.
+                    </p>
+
+                    <p>
+                        En s'en approchant,
+                        Linaryah ressentit une étrange vibration.
+                    </p>
+
+                    <p>
+                        Ce n'était ni la Prescience.
+                        <br><br>
+                        C'était une Résonance.
+                    </p>
+                    <p>
+                        Les Gardiens prélevèrent plusieurs éclats
+                        avant de retourner à Pandora.
+                    </p>
+                </div>
+                <img class="imgCard" src="./img/echoArchive/blueSpice.png">
 
 
+            </div>
+
+
+        </div>
+
+        <!-- ====================== -->
+        <!-- RITUEL -->
+        <!-- ====================== -->
+
+        <div class="borderino">
+            <h2 class="title">🜄 Le Rituel de l'Archive</h2>
+            <div class="flexerino">
+                <img class="imgCard" src="./img/echoArchive/rite.png">
+                <div>
+                    <p>
+                        <i>
+                            « Nous ne pouvions arrêter Barar.
+                            Nous pouvions seulement détourner son regard. »
+                        </i>
+                    </p>
+
+                    <p>
+                        Au sommet de la Base Pandora,
+                        les trois Gardiens utilisèrent les éclats
+                        afin d'alimenter l'Archive de l'Écho.
+                    </p>
+
+                    <p>
+                        Leur objectif n'était ni la victoire,
+                        ni la vengeance.
+                    </p>
+
+                    <p>
+                        Ils souhaitaient seulement détourner
+                        une partie de la conscience de Barar
+                        afin de ralentir sa traque.
+                    </p>
+
+                    <p class="diaalogL">
+                        Eynarok Nahl...
+                        <br>
+                        Sombra téyra...
+                        <br>
+                        zhyn-olis dhurâh...
+                        <br><br>
+                        Nyx, Déesse de Perry,
+                        écoute la voix de tes enfants d'ombre.
+                        <br><br>
+                        Par la Brume Bleutée,
+                        ouvre le chemin.
+                    </p>
+
+                    <p>
+                        Ils pensaient détourner Barar.
+                        <br><br>
+                        Ils ouvrirent les Voiles.
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- ====================== -->
+        <!-- PREMIERE RESONANCE -->
+        <!-- ====================== -->
+
+        <div class="borderino">
+            <h2 class="title">🜁 La Première Résonance</h2>
+
+
+            <div class="flexerino">
+
+                <div>
+                    <p>
+                        <i>
+                            « L'Archive ne retrouva pas Barar.
+                            Elle trouva une âme. »
+                        </i>
+                    </p>
+
+                    <p>
+                        Nyx répondit au rituel.
+                    </p>
+
+                    <p>
+                        L'Archive traversa les Voiles
+                        avec une fraction de l'Écho de Barar.
+                    </p>
+
+                    <p>
+                        Une seule conscience répondit.
+                    </p>
+
+                    <h2>
+                        Nith-Asaliah
+                    </h2>
+                    <p>
+                        Dès cet instant,
+                        Barar et Nith commencèrent à partager
+                        des visions d'univers qu'elles
+                        ne connaissaient pas.
+                    </p>
+
+                    <p>
+                        Guidée par Sram,
+                        Nith reçut la mission
+                        de retrouver ceux
+                        qui entendaient l'Écho.
+                    </p>
+
+                    <p>
+                        Ainsi naquit
+                        le Dunamis du Krosmoz.
+                    </p>
+                </div>
+                <img class="imgCard" src="./img/echoArchive/nith.png">
+            </div>
+        </div>
+
+    </div>
 
 
 </body>

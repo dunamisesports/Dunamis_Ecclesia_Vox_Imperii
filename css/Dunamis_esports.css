@@ -8,8 +8,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: 'Gloock', serif;
-
+    font-family: 'Orbitron', monospace;
     color: white;
 }
 
@@ -145,6 +144,12 @@ evehover {
 .flexerinob {
     display: flex;
     justify-content: space-between;
+}
+
+.flexerinoVert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flexerinoCenter {
@@ -362,4 +367,9 @@ tbody td {
         box-shadow: unset;
         margin-bottom: 10px;
     }
+}
+
+.imgCard {
+    width: 70%;
+    margin: 1%;
 }
