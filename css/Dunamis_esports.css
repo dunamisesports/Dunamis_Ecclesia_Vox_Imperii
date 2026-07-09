@@ -373,3 +373,57 @@ tbody td {
     width: 70%;
     margin: 1%;
 }
+
+.krosmoz-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 16px 42px;
+
+    font-family: "Cinzel", serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #dff7ff;
+    text-decoration: none;
+
+    border: 2px solid #59d7ff;
+    border-radius: 50px;
+
+    background: linear-gradient(135deg,
+            rgba(20, 40, 70, .95),
+            rgba(10, 15, 35, .95));
+
+    box-shadow:
+        0 0 12px rgba(89, 215, 255, .35),
+        inset 0 0 12px rgba(89, 215, 255, .15);
+
+    transition: .35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.krosmoz-button::before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -40%;
+    width: 60%;
+    height: 300%;
+    background: rgba(255, 255, 255, .15);
+    transform: rotate(25deg);
+    transition: .5s;
+}
+
+.krosmoz-button:hover::before {
+    left: 120%;
+}
+
+.krosmoz-button:hover {
+    color: white;
+    border-color: #9cf3ff;
+    box-shadow:
+        0 0 35px rgba(89, 215, 255, .9),
+        0 0 70px rgba(80, 120, 255, .45);
+    transform: translateY(-3px) scale(1.04);
+}
